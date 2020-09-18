@@ -7,30 +7,14 @@ public class DogKennel {
     public static void main(String[] args) {
     ArrayList<Dog> dogs = new ArrayList<>();
     Scanner sc = new Scanner(System.in);
-        for (int i = 0; i < 4; i++) {
-            dogs.add(new Dog(sc.nextLine(), sc.nextInt()));
+    System.out.println("How many dogs do you want to add?");
+    int n;
+    n= sc.nextInt();
+        for (int i = 0; i < n; i++) {
+            dogs.add(new Dog(sc.next(), sc.nextInt()));
         }
     }
 }
-
-
-
-
-
-
-
-
-//    public static void main(String[] args) {
-//        DogKennel a = new DogKennel();
-//        a.addDog();
-//    }
-
-//            for (int i = 0; i < 4; i++) {
-//                String name = sc.nextLine();
-//                int age = sc.nextInt();
-//                dogs.add(new Dog(super.name,super.age));
-//            }
-
 
 
 
